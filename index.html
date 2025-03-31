@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #4f1010;
+            color: ;
+            padding: 1em;
+            text-align: center;
+            background-color: rgb(47, 90, 76);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav li {
+            margin-right: 2em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #toggle {
+            display: none;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                display: none;
+            }
+            #toggle {
+                display: block;
+            }
+        }
+        .a{
+            color: #fff;
+            font-style: oblique;
+           padding-right: 700px;
+           padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logo" class="a">Logo</div>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="toggle" onclick="toggleMenu()"></div>
+    </nav>
+
+</body>
+</html>
